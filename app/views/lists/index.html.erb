@@ -1,12 +1,25 @@
-<h1>My Lists</h1>
+<div class="cover mb-4 d-flex align-items-center justify-content-center">
+  <div class="text-center text-white">
+    <h1>Save your favorite movies</h1>
+  </div>
+</div>
 
-<ul>
-  <% @lists.each do |list| %>
-    <li>
-      <%= list.name %> | <%= link_to 'see details', list_path(list) %>
-    </li>
-  <% end %>
-</ul>
+<div class="container py-4">
+  <div class="d-flex align-items-center justify-content-between mb-5">
+    <h3 class="mb-0">My Lists</h3>
+    <%= link_to 'Create a movie list', new_list_path, class: 'btn btn-dark'  %>
+  </div>
 
-<hr>
-<%= link_to 'create a new list', new_list_path %>
+  <div class="row">
+    <% @lists.each do |list| %>
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <%= link_to list_path(list), class:'text-decoration-none' do %>
+          <div class="card-category" style="background-image: url(asset_path('list_background.jpg'))">
+            <%= list.name %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+</div>
