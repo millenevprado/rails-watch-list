@@ -19,7 +19,7 @@ results[0..20].each do |movie_info|
   movie = Movie.new(
     title: movie_info['title'],
     overview: movie_info['overview'],
-    rating: movie_info['vote_avarege'],
+    rating: movie_info['vote_average'],
     poster_url: "#{image_base_url}#{movie_info['poster_path']}"
   )
 

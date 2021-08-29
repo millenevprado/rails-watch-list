@@ -4,3 +4,7 @@
   object-fit: cover;
   object-position: center;
 }
+
+.movie-card:hover {
+  transform: scale(1.04);
+}

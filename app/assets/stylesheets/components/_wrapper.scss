@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.main-container {
+  width: 50vw;
+}
+
+@media screen and (max-width: 800px) {
+    .main-container {
+        width: 90vw;
+    }
+}
