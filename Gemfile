@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 # dotenv
 gem 'dotenv-rails', groups: [:development, :test]
+# Cloudinary
+gem 'cloudinary', '~> 1.16.0'
 
 # Front-end setup
 gem 'autoprefixer-rails', '10.2.5'
