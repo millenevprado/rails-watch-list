@@ -1,9 +1,13 @@
 <div class="wrapper">
-  <h3>Add a movie to your <%= @list.name %> list</h3>
+  <div class="main-container">
+    <div class="bg-white rounded m-5 p-3 shadow">
+      <h2 class="text-center">Add a movie to your <%= @list.name %> list</h2>
 
-  <%= simple_form_for [@list, @bookmark] do |f| %>
-    <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
-    <%= f.association :movie, prompt: 'Select a movie' %>
-    <%= f.submit class:"btn btn-black w-100" %>
-  <% end %>
+      <%= simple_form_for [@list, @bookmark] do |f| %>
+        <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
+        <%= f.association :movie, prompt: 'Select a movie' %>
+        <%= f.submit class:"btn btn-black w-100" %>
+      <% end %>
+    </div>
+  </div>
 </div>
