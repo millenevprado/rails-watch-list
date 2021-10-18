@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # save list into db
   # post 'lists', to: 'lists#create'
   root to: 'lists#index'
-  resources :lists, except: %i[index edit update destroy] do
+  resources :lists, except: %i[edit update] do
     resources :bookmarks, only: %i[new create]
   end
   resources :bookmarks, only: :destroy
