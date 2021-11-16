@@ -28,7 +28,10 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  # Store uploaded files on the local file system (see config/storage.yml for options).
+  # Devise Mailer configuration
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # Store uploaded files on cloudinary
   config.active_storage.service = :cloudinary
 
   # Don't care if the mailer can't send.

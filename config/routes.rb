@@ -1,15 +1,6 @@
 Rails.application.routes.draw do
-  # list all lists
-  # get 'lists', to: 'lists#index'
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  # show a form to create a new list
-  # get 'lists/new', to: 'lists#new'
-
-  # show a list
-  # get 'lists/:id', to: 'lists#show', as: :list
-
-  # save list into db
-  # post 'lists', to: 'lists#create'
   root to: 'lists#index'
   resources :lists, except: %i[edit update] do
     resources :bookmarks, only: %i[new create]
