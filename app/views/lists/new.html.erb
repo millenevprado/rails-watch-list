@@ -1,17 +1,14 @@
-<div class="wrapper">
-  <div class="main-container">
-    <div class="bg-white rounded m-5 p-3 shadow">
-      <h2 class="text-center"> Create a new list</h2>
+<div class="outer-container">
+  <div class="inner-container">
+    <h2> Create a new list</h2>
 
-      <%= simple_form_for(@list) do |f| %>
-        <%= f.error_notification %>
-        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    <%= simple_form_for(@list) do |f| %>
+      <%= f.error_notification %>
+      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-        <%= f.input :name, placeholder: 'Comedy' %>
-        <%= f.input :photo, as: :file %>
-        <%#= f.input :photo, input_html: { class: 'd-none'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo'  %>
-        <%= f.button :submit, class:"btn btn-black w-100" %>
-      <% end %>
-    </div>
+      <%= f.input :name, placeholder: 'Comedy' %>
+      <%= f.input :photo, input_html: { class: 'd-none' }, label_html: { class: 'btn-upload-photo'}, label: 'Upload a photo 📷'  %>
+      <%= f.button :submit, class:"btn btn-black w-100" %>
+    <% end %>
   </div>
 </div>

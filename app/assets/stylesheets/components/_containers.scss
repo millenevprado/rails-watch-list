@@ -1,0 +1,61 @@
+// standard containers
+.f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.f-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.f-s-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-column-between {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-grow {
+  flex-grow: 1;
+}
+
+// forms containers
+.outer-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.inner-container {
+  background: white;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, .2);
+  margin: 3rem;
+  padding: 1rem;
+  width: 50vw;
+
+  h2 {
+    margin-bottom: 0.7rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inner-container {
+    width: 90vw;
+  }
+}
