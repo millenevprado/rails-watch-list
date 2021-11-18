@@ -1,14 +1,16 @@
-.cover {
-  background-image: url(asset_path('cover.png'));
-  height: 500px;
+// home banner
+.banner {
+  background-image: url('cover.png');
+  height: 30rem;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+// Typedjs text - main banner
 .banner-typed-text span {
-  font-size: 38px;
+  font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }

@@ -15,3 +15,13 @@
     color: #827C79;
   }
 }
+
+.btn-upload-photo {
+  border: 1px solid #d3d3d3;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 4rem;
+  &:hover {
+    color: #827C79 !important;
+  }
+}
