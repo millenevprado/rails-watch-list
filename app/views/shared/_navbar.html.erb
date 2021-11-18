@@ -11,12 +11,21 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "My lists", root_path, class: "nav-link, navbar-text-color" %>
-      </li>
-      <li class="nav-item active">
-        <%= link_to "New list", new_list_path, class: "nav-link, navbar-text-color" %>
-      </li>
+      <% if user_signed_in? %>
+        <li class="nav-item active">
+          <%= link_to "My lists", root_path, class: "nav-link, navbar-text-color" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "New list", new_list_path, class: "nav-link, navbar-text-color" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link, navbar-text-color" %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Login", new_user_session_path, class: "nav-link, navbar-text-color" %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </div>
