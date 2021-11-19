@@ -16,3 +16,42 @@
   height: 50vh;
   max-height: 400px;
 }
+
+.card-home {
+  background: white;
+  border-radius: 2rem;
+  position: relative;
+  height: 20vw;
+  width: 20vw;
+  padding: 2.2vw;;
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 2rem 0 1.4rem 0rem rgba(0, 0, 0, 0.1);
+  img {
+    position: absolute;
+    margin-top: 6rem;
+    height: 55%;
+    right: -3.2vw;
+  }
+  .card-content {
+    position: absolute;
+    top: 11vh;
+    left: 2vw;
+    color: black;
+    line-height: 1.3vw;
+    width: 11vw;
+  }
+  h4 {
+    text-align: left;
+    margin-bottom: 1.2rem;
+    color: #323145;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+  }
+  p {
+    text-align: left;
+    line-height: 1.6rem;
+  }
+}

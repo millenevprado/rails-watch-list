@@ -16,6 +16,19 @@
   }
 }
 
+.btn-dark-blue {
+  color: #323145;
+  padding: 0.6rem 2.2rem;
+  border-radius: 12rem;
+  border: 1px solid #323145;
+  transition: color .3s, background-color .3s, box-shadow .3s;
+  &:hover {
+    background-color: #323145;
+    color: white;
+    box-shadow: 0 0 0.1rem 0.01rem;
+  }
+}
+
 .btn-upload-photo {
   border: 1px solid #d3d3d3;
   padding: 0.4rem 0.8rem;

@@ -1,11 +1,18 @@
 // home banner
 .banner {
-  background-image: url('cover.png');
-  height: 30rem;
+  background: #181818;
+  height: 28rem;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 0 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  img {
+    height: 65%;
+    position: absolute;
+    left: 8vw;
+    top: 11.9vw;
+  }
 }
 
 // Typedjs text - main banner
@@ -13,4 +20,5 @@
   font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  color: white;
 }
