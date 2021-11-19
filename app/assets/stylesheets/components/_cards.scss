@@ -18,7 +18,7 @@
 }
 
 .card-home {
-  background: white;
+  background: $white;
   border-radius: 2rem;
   position: relative;
   height: 20vw;
@@ -39,14 +39,14 @@
     position: absolute;
     top: 11vh;
     left: 2vw;
-    color: black;
+    color: $black;
     line-height: 1.3vw;
     width: 11vw;
   }
   h4 {
     text-align: left;
     margin-bottom: 1.2rem;
-    color: #323145;
+    color: $dark-blue;
     font-weight: bolder;
     letter-spacing: 0.1rem;
   }

@@ -17,14 +17,14 @@
 }
 
 .btn-dark-blue {
-  color: #323145;
+  color: $dark-blue;
   padding: 0.6rem 2.2rem;
   border-radius: 12rem;
-  border: 1px solid #323145;
+  border: 1px solid $dark-blue;
   transition: color .3s, background-color .3s, box-shadow .3s;
   &:hover {
-    background-color: #323145;
-    color: white;
+    background-color: $dark-blue;
+    color: $lighter-gray;
     box-shadow: 0 0 0.1rem 0.01rem;
   }
 }
