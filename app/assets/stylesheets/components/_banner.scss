@@ -22,3 +22,24 @@
   letter-spacing: 0.1rem;
   color: $lighter-gray;
 }
+
+// devise banners
+.banner-sign-up {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("undraw_video_streaming.svg") no-repeat;
+  background-size: cover;
+  background-color: $black;
+  width: 50%;
+  height: 100%;
+
+  h3 {
+    color: $white;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    color: $white;
+  }
+}
