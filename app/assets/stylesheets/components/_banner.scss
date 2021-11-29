@@ -27,6 +27,14 @@
 .banner-sign-up {
   background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("undraw_video_streaming.svg") no-repeat;
   background-size: cover;
+}
+
+.banner-log-in {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("undraw_game_day.svg") no-repeat;
+  background-size: cover;
+}
+
+.banner-sign-up, .banner-log-in {
   background-color: $black;
   width: 50%;
   height: 100%;

@@ -12,15 +12,13 @@
       <%= f.error_notification %>
 
       <div class="form-inputs">
-        <div class="d-flex">
-          <%= f.input :first_name,
-                      required: true,
-                      autofocus: true,
-                      input_html: { autocomplete: "first name" }%>
-          <%= f.input :last_name,
-                      required: true,
-                      input_html: { autocomplete: "last name" }%>
-        </div>
+        <%= f.input :first_name,
+                    required: true,
+                    autofocus: true,
+                    input_html: { autocomplete: "first name" }%>
+        <%= f.input :last_name,
+                    required: true,
+                    input_html: { autocomplete: "last name" }%>
         <%= f.input :email,
                     required: true,
                     autofocus: true,
