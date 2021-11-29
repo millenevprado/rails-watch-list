@@ -27,6 +27,11 @@
 .banner-sign-up {
   background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("undraw_video_streaming.svg") no-repeat;
   background-size: cover;
+  & > .link-white {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
 }
 
 .banner-log-in {
@@ -38,6 +43,7 @@
   background-color: $black;
   width: 50%;
   height: 100%;
+  position: relative;
 
   h3 {
     color: $white;

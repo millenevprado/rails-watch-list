@@ -1,6 +1,9 @@
 <div class="devise-container">
-
   <div class="banner-sign-up f-column-center">
+    <%= link_to root_path, class: "link-white" do %>
+      <i class="fas fa-long-arrow-alt-left me-2"></i>
+      <span>Back to home</span>
+    <% end %>
     <h3>Start now</h3>
     <p>Already have an account?</p>
     <%= link_to "Log in", new_session_path(resource_name), class: "btn btn-red-rounded" %>

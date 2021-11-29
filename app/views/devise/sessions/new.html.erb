@@ -1,6 +1,9 @@
 <div class="devise-container">
-
   <div class="form-container">
+    <%= link_to root_path, class: "link-red" do %>
+      <i class="fas fa-long-arrow-alt-left me-2"></i>
+      <span>Back to home</span>
+    <% end %>
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-inputs">
         <%= f.input :email,

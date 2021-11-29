@@ -54,3 +54,28 @@
     color: #827C79 !important;
   }
 }
+
+// links
+.link-white {
+  color: $white;
+  font-weight: 700;
+  transition: color .2s;
+  &:hover {
+    color: $red;
+  }
+  span {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.link-red {
+  color: $red;
+  font-weight: 700;
+  transition: color .2s;
+  &:hover {
+    color: $black;
+  }
+  span {
+    font-family: "Montserrat", sans-serif;
+  }
+}
