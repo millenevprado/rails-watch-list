@@ -1,11 +1,18 @@
 // home banner
 .banner {
-  background-image: url('cover.png');
-  height: 30rem;
+  background: $black;
+  height: 28rem;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 0 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  img {
+    height: 65%;
+    position: absolute;
+    left: 8vw;
+    top: 11.9vw;
+  }
 }
 
 // Typedjs text - main banner
@@ -13,4 +20,40 @@
   font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  color: $lighter-gray;
+}
+
+// devise banners
+.banner-sign-up {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("undraw_video_streaming.svg") no-repeat;
+  background-size: cover;
+  & > .link-white {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+}
+
+.banner-log-in {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("undraw_game_day.svg") no-repeat;
+  background-size: cover;
+}
+
+.banner-sign-up, .banner-log-in {
+  background-color: $black;
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+  h3 {
+    color: $white;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    color: $white;
+  }
 }

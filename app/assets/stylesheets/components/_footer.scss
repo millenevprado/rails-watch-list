@@ -1,12 +1,16 @@
 .footer {
-  background: #252525;
+  background: $dark-gray;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 3.8rem;
   padding: 0 3rem;
-  color: #FDFDFD;
+  color: #E6E6E6;
   margin-top: auto;
+
+  .fa-heart {
+  color: $red;
+  }
 }
 
 .footer-links {
@@ -15,7 +19,7 @@
 }
 
 .footer-links a {
-  color: #FDFDFD;
+  color: #E6E6E6;
   opacity: 0.15;
   text-decoration: none;
   font-size: 1.5rem;
@@ -24,8 +28,4 @@
   &:hover {
     opacity: 1;
   }
-}
-
-.footer .fa-heart {
-  color: #D23333;
 }

@@ -1,7 +1,16 @@
-<div class="outer-container">
-  <div class="inner-container">
-    <h2>Sign up</h2>
+<div class="devise-container">
+  <div class="banner-sign-up f-column-center">
+    <%= link_to root_path, class: "link-white" do %>
+      <i class="fas fa-long-arrow-alt-left me-2"></i>
+      <span>Back to home</span>
+    <% end %>
+    <h3>Start now</h3>
+    <p>Already have an account?</p>
+    <%= link_to "Log in", new_session_path(resource_name), class: "btn btn-red-rounded" %>
 
+  </div>
+
+  <div class="form-container">
     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
 
@@ -28,10 +37,11 @@
       </div>
 
       <div class="form-actions">
-        <%= f.button :submit, "Sign up", class:"btn btn-black w-100 mb-3" %>
+        <%= f.button :submit, "Sign up", class:"btn btn-black w-100" %>
       </div>
     <% end %>
 
-    <%= render "devise/shared/links" %>
+    <%#= render "devise/shared/links" %>
   </div>
+
 </div>

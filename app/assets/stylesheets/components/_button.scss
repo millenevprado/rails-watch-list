@@ -1,18 +1,47 @@
 .btn-black {
-  background: #181818;
-  color: #FDFDFD;
+  background: $black;
+  color: $white;
+
+  &:hover {
+    color: $lighter-gray;
+  }
+}
+
+.btn-red {
+  background: #6d0707;
+  color: $lighter-gray;
+  color: $white;
 
   &:hover {
     color: #827C79;
   }
 }
 
-.btn-red {
-  background: #6d0707;
-  color: #FDFDFD;
-
+.btn-red-rounded {
+  background-color: transparent;
+  border: 3px $white solid;
+  line-height: 3rem;
+  font-weight: 600;
+  padding: 0.1rem 1.2rem;
+  border-radius: 12rem;
+  color: $white;
+  transition: color .3s, background-color .3s;
   &:hover {
-    color: #827C79;
+    background-color: $red;
+    color: $white;
+  }
+}
+
+.btn-dark-blue {
+  color: $dark-blue;
+  padding: 0.6rem 2.2rem;
+  border-radius: 12rem;
+  border: 1px solid $dark-blue;
+  transition: color .3s, background-color .3s, box-shadow .3s;
+  &:hover {
+    background-color: $dark-blue;
+    color: $lighter-gray;
+    box-shadow: 0 0 0.1rem 0.01rem;
   }
 }
 
@@ -23,5 +52,30 @@
   border-radius: 4rem;
   &:hover {
     color: #827C79 !important;
+  }
+}
+
+// links
+.link-white {
+  color: $white;
+  font-weight: 700;
+  transition: color .2s;
+  &:hover {
+    color: $red;
+  }
+  span {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.link-red {
+  color: $red;
+  font-weight: 700;
+  transition: color .2s;
+  &:hover {
+    color: $black;
+  }
+  span {
+    font-family: "Montserrat", sans-serif;
   }
 }

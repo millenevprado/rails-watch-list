@@ -1,0 +1,37 @@
+<div class="banner mb-4">
+  <%= image_tag "undraw_home_cinema" %>
+  <div class="text-white">
+    <p class="banner-typed-text">
+      <span id="banner-typed-text"></span>
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="d-flex align-items-center justify-content-center mt-5 mb-5">
+    <div class="card-home mx-5">
+      <%= image_tag "undraw_time_management" %>
+      <div class="card-content">
+        <h4>Save Time</h4>
+        <p>Save your favorite movies to save time</p>
+      </div>
+    </div>
+    <div class="card-home mx-5">
+      <%= image_tag "undraw_folder_files" %>
+      <div class="card-content">
+        <h4>Organize</h4>
+        <p>Organize your movie in lists</p>
+      </div>
+    </div>
+    <div class="card-home mx-5">
+      <%= image_tag "undraw_press_play" %>
+      <div class="card-content">
+        <h4>Enjoy!</h4>
+        <p>Enjoy your time watching movies</p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-dark-blue mb-5" %>
+  </div>
+</div>

@@ -1,7 +1,9 @@
-<div class="outer-container">
-  <div class="inner-container">
-    <h2>Log in</h2>
-
+<div class="devise-container">
+  <div class="form-container">
+    <%= link_to root_path, class: "link-red" do %>
+      <i class="fas fa-long-arrow-alt-left me-2"></i>
+      <span>Back to home</span>
+    <% end %>
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-inputs">
         <%= f.input :email,
@@ -15,10 +17,17 @@
       </div>
 
       <div class="form-actions">
-        <%= f.button :submit, "Log in", class:"btn btn-black w-100 mb-3" %>
+        <%= f.button :submit, "Log in", class:"btn btn-black w-100" %>
       </div>
     <% end %>
+    <div class="f-center mt-3">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
 
-    <%= render "devise/shared/links" %>
+  <div class="banner-log-in f-column-center">
+    <h3>Welcome back</h3>
+    <p>Not registered yet?</p>
+    <%= link_to "Sign up", new_registration_path(resource_name), class: "btn btn-red-rounded" %>
   </div>
 </div>
