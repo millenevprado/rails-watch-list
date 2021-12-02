@@ -8,13 +8,37 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+// External imports
 import 'bootstrap';
+
+// Internal imports
 import { loadDynamicBannerText } from '../components/banner';
+import { initSweetalertList, initSweetalertMovie } from '../plugins/init_sweetalert';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   // [...]
   loadDynamicBannerText();
+  initSweetalertList('#sweet-alert-list', {
+    title: "Are you sure you want to delete this list?",
+    text: "This action cannot be reversed",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true
+  }, (value) => {
+    if (value) {
+      const link = document.querySelector('#delete-list-link');
+      link.click();
+    }
+  });
+
+  initSweetalertMovie('.sweet-alert-movie', {
+    title: "Are you sure you want to delete this movie?",
+    text: "This action cannot be reversed",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true
+  });
 });
 
 // Uncomment to copy all static images under ../images to the output folder and reference

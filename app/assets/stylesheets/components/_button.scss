@@ -72,6 +72,8 @@
   color: $red;
   font-weight: 700;
   transition: color .2s;
+  border: none;
+  background-color: transparent;
   &:hover {
     color: $black;
   }
